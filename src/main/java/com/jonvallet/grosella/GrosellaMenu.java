@@ -15,9 +15,9 @@ public class GrosellaMenu {
     @GET
     public String getMenus(@Context SecurityContext req){
 
-        String user = req.getUserPrincipal().getName();
+        //String user = req.getUserPrincipal().getName();
 
-        return "Hello Grosella user: "+user;
+        return "Hello Grosella user! ";
 
     }
 }

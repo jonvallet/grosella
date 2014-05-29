@@ -1,28 +1,14 @@
 apply plugin: 'war'
-apply plugin: 'appengine'
 
 
 sourceCompatibility = '1.7'
-downloadSdk = true
-appengineSdk = "1.9.4"
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.4'
-    }
-}
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-
-    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.4'
 
     compile 'javax.ws.rs:javax.ws.rs-api:2.0'
     compile 'org.openid4java:openid4java:0.9.8'
